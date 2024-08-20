@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		3DE213F72C71221600937F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE213F62C71221600937F64 /* AppDelegate.swift */; };
 		3DE213F92C71221600937F64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE213F82C71221600937F64 /* SceneDelegate.swift */; };
-		3DE213FB2C71221600937F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE213FA2C71221600937F64 /* ViewController.swift */; };
-		3DE213FE2C71221600937F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE213FC2C71221600937F64 /* Main.storyboard */; };
+		3DE213FB2C71221600937F64 /* LaunchFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE213FA2C71221600937F64 /* LaunchFirst.swift */; };
 		3DE214002C71221900937F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE213FF2C71221900937F64 /* Assets.xcassets */; };
 		3DE214032C71221900937F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE214012C71221900937F64 /* LaunchScreen.storyboard */; };
+		3DE2140E2C71D00600937F64 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE2140D2C71D00600937F64 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DE213F32C71221600937F64 /* Coery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE213F62C71221600937F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE213F82C71221600937F64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3DE213FA2C71221600937F64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3DE213FD2C71221600937F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DE213FA2C71221600937F64 /* LaunchFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFirst.swift; sourceTree = "<group>"; };
 		3DE213FF2C71221900937F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DE214022C71221900937F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DE214042C71221900937F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE2140D2C71D00600937F64 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +40,8 @@
 		3DE213EA2C71221600937F64 = {
 			isa = PBXGroup;
 			children = (
+				3DE2140A2C71228600937F64 /* Delegate */,
+				3DE2140C2C71CFDD00937F64 /* View */,
 				3DE213F52C71221600937F64 /* Coery */,
 				3DE213F42C71221600937F64 /* Products */,
 			);
@@ -56,15 +58,29 @@
 		3DE213F52C71221600937F64 /* Coery */ = {
 			isa = PBXGroup;
 			children = (
-				3DE213F62C71221600937F64 /* AppDelegate.swift */,
-				3DE213F82C71221600937F64 /* SceneDelegate.swift */,
-				3DE213FA2C71221600937F64 /* ViewController.swift */,
-				3DE213FC2C71221600937F64 /* Main.storyboard */,
 				3DE213FF2C71221900937F64 /* Assets.xcassets */,
 				3DE214012C71221900937F64 /* LaunchScreen.storyboard */,
 				3DE214042C71221900937F64 /* Info.plist */,
 			);
 			path = Coery;
+			sourceTree = "<group>";
+		};
+		3DE2140A2C71228600937F64 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3DE213F62C71221600937F64 /* AppDelegate.swift */,
+				3DE213F82C71221600937F64 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		3DE2140C2C71CFDD00937F64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DE213FA2C71221600937F64 /* LaunchFirst.swift */,
+				3DE2140D2C71D00600937F64 /* HomeVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +143,6 @@
 			files = (
 				3DE214032C71221900937F64 /* LaunchScreen.storyboard in Resources */,
 				3DE214002C71221900937F64 /* Assets.xcassets in Resources */,
-				3DE213FE2C71221600937F64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DE213FB2C71221600937F64 /* ViewController.swift in Sources */,
+				3DE213FB2C71221600937F64 /* LaunchFirst.swift in Sources */,
+				3DE2140E2C71D00600937F64 /* HomeVC.swift in Sources */,
 				3DE213F72C71221600937F64 /* AppDelegate.swift in Sources */,
 				3DE213F92C71221600937F64 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3DE213FC2C71221600937F64 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3DE213FD2C71221600937F64 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3DE214012C71221900937F64 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +304,6 @@
 				INFOPLIST_FILE = Coery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +330,6 @@
 				INFOPLIST_FILE = Coery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
